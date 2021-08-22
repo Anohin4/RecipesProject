@@ -52,10 +52,11 @@
      GET /api/recipe/{id}
   
   Вместо {id} указать id рецепта
+  
  5. Обновление и удаление рецептов
  
-    DELETE /api/recipe/{id}
+   DELETE /api/recipe/{id}
  
-    PUT /api/recipe/{id}
+   PUT /api/recipe/{id}
  
-    Вместо {id} указать id рецепта
+   Вместо {id} указать id рецепта
