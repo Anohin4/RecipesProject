@@ -48,10 +48,14 @@
  GET /api/recipe/myRecipe
  
  4. Поиск рецепта по ид
+ 
   GET /api/recipe/{id}
+  
   Вместо {id} указать id рецепта
  5. Обновление и удаление рецептов
+ 
  DELETE /api/recipe/{id}
+ 
  PUT /api/recipe/{id}
  
    Вместо {id} указать id рецепта
