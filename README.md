@@ -41,21 +41,21 @@
 }
 
  2. Удаление рецета
- DELETE /api/recipe/{id}
- Вместо {id} указать id рецепта
+    DELETE /api/recipe/{id}
+    Вместо {id} указать id рецепта
  
  3. Просмотр своих рецептов
- GET /api/recipe/myRecipe
+    GET /api/recipe/myRecipe
  
  4. Поиск рецепта по ид
  
-  GET /api/recipe/{id}
+     GET /api/recipe/{id}
   
   Вместо {id} указать id рецепта
  5. Обновление и удаление рецептов
  
- DELETE /api/recipe/{id}
+    DELETE /api/recipe/{id}
  
- PUT /api/recipe/{id}
+    PUT /api/recipe/{id}
  
-   Вместо {id} указать id рецепта
+    Вместо {id} указать id рецепта
