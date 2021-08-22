@@ -17,8 +17,6 @@ public class User {
 
     @Id
     @NotBlank
-    @Email
-    @Pattern(regexp=".+@.+\\..+")
     private String userName;
 
     @Column
@@ -34,9 +32,4 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     List<Recipe> recipes = new ArrayList<>();
-
-    @JsonSetter(value = "email")
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 }
