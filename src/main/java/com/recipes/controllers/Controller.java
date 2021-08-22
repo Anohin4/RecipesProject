@@ -60,14 +60,14 @@ public class Controller {
                 .body(currentUser.getRecipes());
     }
 
-    @GetMapping(value = "/api/recipe/search/", params = "category")
+    @GetMapping(value = "/api/recipe/search", params = "category")
     public ResponseEntity searchRecipeByCategory(@RequestParam String category) {
         return ResponseEntity
                 .status(200)
                 .body(recipeService.findByCategory(category));
     }
 
-    @GetMapping(value = "/api/recipe/search/", params = "name")
+    @GetMapping(value = "/api/recipe/search", params = "name")
     public ResponseEntity searchRecipeByName(@RequestParam String name) {
         return ResponseEntity
                 .status(200)
