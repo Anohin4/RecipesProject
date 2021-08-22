@@ -21,7 +21,7 @@
 Для регистрации необходимом сделать POST /api/register с JSON-ом следующего содержания:
 
 {
-   "userName": "Cook_Programmer",
+   "userName": "CookProgrammer",
    "password": "RecipeInBinary"
 }
 
