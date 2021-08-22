@@ -24,6 +24,34 @@
    "userName": "Cook_Programmer",
    "password": "RecipeInBinary"
 }
+
 Поле имени пользователя не должно быть пустым, пароль должен содержатт минимум 8 символов.
 
+ После этого вы можете использовать функции ниже:
+ 1. Добавление рецепта
+ POST /api/recipe/new
  
+ в теле запроса должен быть JSON следующего вида 
+ {
+   "name": "Fresh Mint Tea",
+   "category": "beverage",
+   "description": "Light, aromatic and refreshing beverage, ...",
+   "ingredients": ["boiled water", "honey", "3fresh mint leaves"],
+   "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
+}
+
+ 2. Удаление рецета
+ DELETE /api/recipe/{id}
+ Вместо {id} указать id рецепта
+ 
+ 3. Просмотр своих рецептов
+ GET /api/recipe/myRecipe
+ 
+ 4. Поиск рецепта по ид
+  GET /api/recipe/{id}
+  Вместо {id} указать id рецепта
+ 5. Обновление и удаление рецептов
+ DELETE /api/recipe/{id}
+ PUT /api/recipe/{id}
+ 
+   Вместо {id} указать id рецепта
