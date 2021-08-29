@@ -30,6 +30,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-devtools'
     implementation 'org.projectlombok:lombok:1.18.20'
     runtimeOnly 'com.h2database:h2'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation('org.springframework.boot:spring-boot-starter-test:2.5.4')
+    testImplementation group: 'org.springframework.security', name: 'spring-security-test', version: '5.5.2'
 }
 
 test {
